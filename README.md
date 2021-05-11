@@ -1,1 +1,3 @@
-"# node-rest-api" 
+# node-rest-api
+
+config your mongoDB with dotEnv
