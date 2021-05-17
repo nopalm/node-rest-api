@@ -11,6 +11,7 @@ router.get('/', async (req, res) => {
     res.status(500).json({ message: err.message });
   }
 });
+
 //  get one
 router.get('/:id', getUsers, (req, res) => {
   res.json(res.user);
@@ -29,6 +30,7 @@ router.post('/', async (req, res) => {
     res.status(400).json({ message: err.message });
   }
 });
+
 //  update one
 router.patch('/:id', getUsers, async (req, res) => {
   if (req.body.name != null) {

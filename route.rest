@@ -1,27 +1,62 @@
+//users
 
 GET http://localhost:3000/users
 
 ###
-
-GET http://localhost:3000/users/609ae08ff708e22f5c10b719
+GET http://localhost:3000/users/60a233b6212cff17e80eaf45
 
 ###
 POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-    "name": "user",
-    "address": "user address"
+    "name": "user one",
+    "address": "this user address one"
 }
 
 ###
-DELETE http://localhost:3000/users/609ae08ff708e22f5c10b719
+DELETE http://localhost:3000/users/60a233b6212cff17e80eaf45
 
 ###
-PATCH http://localhost:3000/users/609ae08ff708e22f5c10b719
+PATCH http://localhost:3000/users/60a233b6212cff17e80eaf45
 Content-Type: application/json
 
 {
-    "name": "user1",
-    "address": "user1"
+    "name": "user update",
+    "address": "user update"
 }
+
+
+//products
+
+//get all products
+###
+GET http://localhost:3000/products
+
+//add a new product
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "productName": "Product One",
+    "productDescription": "Product One"
+}
+
+###
+# update product
+PATCH http://localhost:3000/products/60a23845b37c3420b82df606
+Content-Type: application/json
+
+{
+    "productName": "Product One updated",
+    "productDescription": "Product One updated"
+}
+
+###
+# get one
+GET http://localhost:3000/products/60a239b2b37c3420b82df608
+
+###
+# delete one product
+DELETE http://localhost:3000/products/60a239e6b37c3420b82df60a

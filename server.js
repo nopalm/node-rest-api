@@ -15,6 +15,8 @@ db.once('open', () => console.log('conected to db'));
 
 app.use(express.json());
 const userRoute = require('./route/user');
+const productRoute = require('./route/product');
 app.use('/users', userRoute);
+app.use('/products', productRoute);
 
 app.listen(3000, () => console.log('started serv'));
