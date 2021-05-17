@@ -1,16 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+
 const Header = ({ logo }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="#">
+      <NavLink className="navbar-brand" to="/">
         <img
           src={logo}
           className="App-logo"
           alt="logo"
           style={{ height: '100%', width: '40%' }}
         />
-      </a>
+      </NavLink>
       <button
         className="navbar-toggler"
         type="button"
@@ -25,20 +26,28 @@ const Header = ({ logo }) => {
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
-          <li className="nav-item active">
-            <Link className="nav-link" to="/">
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/" activeClassName="selected">
               All Data
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/users">
+            <NavLink
+              className="nav-link"
+              to="/users"
+              activeClassName="selected"
+            >
               Users
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/products">
+            <NavLink
+              className="nav-link"
+              to="/products"
+              activeClassName="selected"
+            >
               Products
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
