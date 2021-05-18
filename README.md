@@ -4,6 +4,12 @@ config your mongoDB with .env file inside backend folder in my case i'm using DA
 
 ## how to use
 Go to inside each folder backend and client
+- cd backend
+
+```
+npm install
+```
+- cd client
 
 ```
 npm install
