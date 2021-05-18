@@ -1,26 +1,30 @@
 import './App.css';
 import logo from './logo.svg';
 import Header from './components/Header';
-import All from './components/All';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import User from './components/User';
 import Product from './components/Product';
+import Home from './components/Home';
+import CreateProduct from './components/CreateProduct';
 
 function App() {
   return (
     <Router>
-      <div className="container-fluid">
+      <div className='container-fluid'>
         <Header logo={logo} />
-        <div className="container">
+        <div className='container'>
           <Switch>
-            <Route exact path="/">
-              <All />
+            <Route exact path='/'>
+              <Home />
             </Route>
-            <Route path="/users">
+            <Route path='/users'>
               <User />
             </Route>
-            <Route path="/products">
+            <Route path='/products'>
               <Product />
+            </Route>
+            <Route path='/create'>
+              <CreateProduct />
             </Route>
           </Switch>
         </div>
