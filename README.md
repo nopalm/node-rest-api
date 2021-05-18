@@ -2,7 +2,7 @@
 
 config your mongoDB with .env file inside backend folder in my case i'm using DATABASE_URL inside of my .env file for get my url mongoDB
 
-## how to use
+## How to use
 Go to inside each folder backend and client
 - cd backend
 
@@ -13,6 +13,18 @@ npm install
 
 ```
 npm install
+```
+## How to start application
+Go to inside each folder backend and client
+- cd backend
+
+```
+npm start dev
+```
+- cd client
+
+```
+npm start
 ```
 
 ## Url endPoints
