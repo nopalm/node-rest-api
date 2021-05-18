@@ -24,6 +24,6 @@ http://localhost:5000/products
 
 ## .env
 ```
-DATABASE_URL = url your monggo db
+DATABASE_URL = your url monggo db
 ```
 
